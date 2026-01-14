@@ -141,15 +141,10 @@
         <h2>Your Trainer Has Direct Hospital Connections</h2>
         <div class="img-con">
           <img
-            src="./assets/Gemini_Generated_Image_7f2jv27f2jv27f2j.png"
+            src="./assets/1 (21).jpeg"
             alt=""
           />
-          <!-- <dotlottie-wc
-            src="https://lottie.host/8688b92d-2b62-4771-b3f6-e56ee2165715/TFtjbJTaMv.lottie"
-            style="width: 100%; height: 100%"
-            autoplay
-            loop
-          ></dotlottie-wc> -->
+         
         </div>
         <div class="per-con">
           <div class="">
@@ -488,7 +483,7 @@
         <div class="audience-wrapper">
           <!-- Left Lottie Animation -->
           <div class="audience-lottie">
-            <img src="./assets/Group 6.png" alt="" />
+            <img src="./assets/Group 294.png" alt="" />
           </div>
 
           <!-- Right Content -->
@@ -742,7 +737,7 @@
 
           <!-- Right Content -->
           <div class="benefit-illustration">
-            <img src="./assets/bg-black.png" alt="" />
+            <img src="./assets/Group 293.png" alt="" />
           </div>
         </div>
       </div>
@@ -763,7 +758,7 @@
           </ul>
         </div>
         <div class="bonus-img">
-          <img src="./assets/Books.png" alt="" />
+          <img src="./assets/Group 291.png" alt="" />
         </div>
       </div>
     </section>
@@ -816,7 +811,7 @@
         <div class="audience-wrapper">
           <!-- Left Lottie Animation -->
           <div class="audience-lottie">
-            <img src="./assets/Group 6.png" alt="" />
+            <img src="./assets/Group 290.png" alt="" />
           </div>
 
           <!-- Right Content -->
@@ -1271,15 +1266,47 @@ From trainee to employed in 5-7 months. That's the SHA'S guarantee.
 
 
 
-
-
-
-   
+<footer class="site-footer">
+  <div class="footer-container">
     
+    <div class="footer-col">
+      <h3>Address</h3>
+      <p>
+        No.3, Nehru Street,<br />
+        TTTI Post, Tharamani,<br />
+        Chennai – 600113
+      </p>
+    </div>
+
+    <div class="footer-col">
+      <h3>Phone</h3>
+      <p>
+        (044) 47839241<br />
+        7305368552<br />
+        9952968552
+      </p>
+    </div>
+
+    <div class="footer-col">
+      <h3>Email</h3>
+      <p>
+        shashospitallicense@gmail.com<br />
+        pranavpraharsha2006@gmail.com
+      </p>
+    </div>
+
+  </div>
+
+  <div class="footer-tagline">
+    “THE MORE YOU LEARN, THE MORE YOU EARN”
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 SHAS Group. All Rights Reserved.
+  </div>
+</footer>
+
     <!--  -->
-
-   
-
     <!--  -->
     
 
@@ -1376,6 +1403,63 @@ From trainee to employed in 5-7 months. That's the SHA'S guarantee.
 
     <!-- js -->
     <script>
+
+  const slides = document.querySelectorAll(".slide");
+  const dots = document.querySelectorAll(".dot");
+  const nextBtn = document.querySelector(".next");
+  const prevBtn = document.querySelector(".prev");
+
+  let index = 0;
+  let interval;
+
+  function showSlide(i) {
+    slides.forEach(slide => slide.classList.remove("active"));
+    dots.forEach(dot => dot.classList.remove("active"));
+
+    slides[i].classList.add("active");
+    dots[i].classList.add("active");
+    index = i;
+  }
+
+  function nextSlide() {
+    index = (index + 1) % slides.length;
+    showSlide(index);
+  }
+
+  function prevSlide() {
+    index = (index - 1 + slides.length) % slides.length;
+    showSlide(index);
+  }
+
+  nextBtn.addEventListener("click", () => {
+    nextSlide();
+    resetAutoSlide();
+  });
+
+  prevBtn.addEventListener("click", () => {
+    prevSlide();
+    resetAutoSlide();
+  });
+
+  dots.forEach((dot, i) => {
+    dot.addEventListener("click", () => {
+      showSlide(i);
+      resetAutoSlide();
+    });
+  });
+
+  function autoSlide() {
+    interval = setInterval(nextSlide, 5000);
+  }
+
+  function resetAutoSlide() {
+    clearInterval(interval);
+    autoSlide();
+  }
+
+  autoSlide();
+
+
       const faqItems = document.querySelectorAll(".faq-item");
 
       faqItems.forEach((item) => {
@@ -1489,10 +1573,7 @@ From trainee to employed in 5-7 months. That's the SHA'S guarantee.
             "overview": "Your classroom is a hospital. Your assignments are real patient files. Your practice is actual billing software.",
            
             "tools": [
-              { "name": "Hootsuite", "icon": "/assets/Hootsuite.png" },
-              { "name": "Canva", "icon": "/assets/canva.png" },
-              { "name": "Buffer", "icon": "/assets/buffer.png" },
-              { "name": "Other", "icon": "/assets/ssm.png" }
+              { "name": "Hootsuite", "icon": "/assets/1 (43).jpeg" }
             ],
             "thumbnail": "/assets/images/module1_thumb.png"
           },
@@ -1503,13 +1584,7 @@ From trainee to employed in 5-7 months. That's the SHA'S guarantee.
             "overview": "23 years of relationships mean hospitals call us first when they need trained staff. You're filling positions we already know about—not competing blindly.",
            
             "tools": [
-              { "name": "InstaChamp", "icon": "/assets/instachamp.png" },
-              { "name": "Taplink", "icon": "/assets/taplink.png" },
-              {
-                "name": "MetaHashtags",
-                "icon": "/assets/metahas.png"
-              },
-              { "name": "AllHashtag", "icon": "/assets/allhash.png" }
+              { "name": "InstaChamp", "icon": "/assets/1 (23).jpeg" }
             ],
             "thumbnail": "/assets/images/module2_thumb.png"
           },
@@ -1524,16 +1599,8 @@ From trainee to employed in 5-7 months. That's the SHA'S guarantee.
             "tools": [
               {
                 "name": "LinkedIn Sales Navigator",
-                "icon": "/assets/linksale.png"
-              },
-              {
-                "name": "LinkedIn Learning",
-                "icon": "/assets/linklearn.png"
-              },
-              { "name": "TexAu", "icon": "/assets/tex.png" },
-              { "name": "Wordtune", "icon": "/assets/Wordtune.png" },
-              { "name": "Publer", "icon": "/assets/Pabbly.png" },
-              { "name": "Crystal", "icon": "/assets/crystal.png" }
+                "icon": "/assets/1 (6).jpeg"
+              }
             ],
             "thumbnail": "/assets/images/module3_thumb.png"
           },
@@ -1544,11 +1611,7 @@ From trainee to employed in 5-7 months. That's the SHA'S guarantee.
             "overview": "You're not looking for your first job. You've already worked as a Management Trainee. That credential changes everything",
            
             "tools": [
-              { "name": "Pabbly", "icon": "/assets/Pabbly.png" },
-              {
-                "name": "Facebook Ads Manager",
-                "icon": "/assets/Facebook Ads Manager.png"
-              }
+              { "name": "Pabbly", "icon": "/assets/1 (19).jpeg" }
             ],
             "thumbnail": "/assets/images/module4_thumb.png"
           },
@@ -1561,11 +1624,7 @@ From trainee to employed in 5-7 months. That's the SHA'S guarantee.
             "tools": [
               {
                 "name": "Peppertype.ai",
-                "icon": "/assets/Peppertype.ai"
-              },
-              {
-                "name": "SmallSEOTools",
-                "icon": "/assets/SmallSEOTools.png"
+                "icon": "/assets/1 (16).jpeg"
               }
             ],
             "thumbnail": "/assets/images/module5_thumb.png",
@@ -1580,27 +1639,7 @@ From trainee to employed in 5-7 months. That's the SHA'S guarantee.
             "tools": [
               {
                 "name": "Google Keyword Planner",
-                "icon": "/assets/Google Keyword Planner.png"
-              },
-              {
-                "name": "Ubersuggest",
-                "icon": "/assets/Ubersuggest.png"
-              },
-              { "name": "KWFinder", "icon": "/assets/KWFinder.png" },
-              {
-                "name": "AnswerThePublic",
-                "icon": "/assets/AnswerThePublic.png"
-              },
-              { "name": "GTmetrix", "icon": "/assets/GTmetrix Pingdom.png" },
-              { "name": "Pingdom", "icon": "/assets/Pingdom.png" },
-              {
-                "name": "Google Analytics",
-                "icon": "/assets/Google Analytics.png"
-              },
-              { "name": "Semrush", "icon": "/assets/Semrush.png" },
-              {
-                "name": "SmallSEOTools",
-                "icon": "/assets/SmallSEOTools.png"
+                "icon": "/assets/1 (18).jpeg"
               }
             ],
             "thumbnail": "/assets/images/module6_thumb.png",
@@ -1714,7 +1753,36 @@ From trainee to employed in 5-7 months. That's the SHA'S guarantee.
 
         // Tools (TEXT ONLY)
         // Tools (ICON + TEXT)
-        
+         if (mod.tools && mod.tools.length) {
+          detailsEl.appendChild(
+            el("h4", { class: "module-tools-title" }, "")
+          );
+
+          const toolsWrap = el("div", { class: "module-tools-wrap" });
+
+          mod.tools.forEach((t) => {
+            const toolItem = el("div", { class: "module-tool-item" });
+
+            // Tool icon
+            if (t.icon) {
+              toolItem.appendChild(
+                el("img", {
+                  src: t.icon,
+                  alt: t.name,
+                  class: "module-tool-icon",
+                  loading: "lazy",
+                })
+              );
+            }
+
+      
+
+            toolsWrap.appendChild(toolItem);
+          });
+
+          detailsEl.appendChild(toolsWrap);
+        }
+
         // Mobile scroll
         if (window.innerWidth <= 900) {
           detailsEl.scrollIntoView({ behavior: "smooth", block: "start" });
