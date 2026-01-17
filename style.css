@@ -583,10 +583,12 @@ body {
 }
 
 .training-images img {
-  width: 100%;
+  width: 80%;
+  margin: 0 auto;
+  /* height: 600px; */
   border-radius: 14px;
   object-fit: cover;
-  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1); */
 }
 
 /* RIGHT DETAILS */
@@ -826,9 +828,8 @@ body {
 
 /* RIGHT */
 .image-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 14px;
+  width: 100%;
+  height: 100%;
 }
 
 .image-grid img {
@@ -919,7 +920,7 @@ body {
 /* RIGHT */
 .image-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  /* grid-template-columns: repeat(3, 1fr); */
   gap: 14px;
 }
 
@@ -928,7 +929,7 @@ body {
   height: 100%;
   object-fit: cover;
   border-radius: 12px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  /* box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08); */
 }
 
 /* Responsive */
@@ -1027,7 +1028,7 @@ body {
 
 /* Check icon */
 .why-list li::before {
-  content: "✔";
+  /* content: "✔"; */
   position: absolute;
   left: 0;
   color: #701d10;
@@ -1092,16 +1093,15 @@ body {
 /* LEFT IMAGES */
 .placement-images {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  /* grid-template-columns: repeat(2, 1fr); */
   gap: 14px;
 }
 
 .placement-images img {
   width: 100%;
-  height: 180px;
   object-fit: cover;
   border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  /* box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08); */
 }
 
 /* RIGHT STEPS */
