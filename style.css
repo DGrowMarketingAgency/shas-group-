@@ -30,7 +30,7 @@ body {
 /* Logo */
 .logo img {
   width: 250px;
-  margin-bottom: 30px;
+  /* margin-bottom: 15px; */
 }
 
 /* Rating */
@@ -41,6 +41,7 @@ body {
   border-radius: 30px;
   font-weight: 600;
   margin-bottom: 20px;
+  margin-top: 30px;
 }
 
 .rating span {
@@ -52,18 +53,21 @@ body {
 .tagline {
   color: #0d60d4;
   font-weight: 600;
+  font-size: 1.5rem;
   margin-bottom: 10px;
 }
 
 /* Heading */
-.hero h1 {
+.hero h1,
+.hero h2 {
   font-size: 3rem;
   font-weight: 800;
   line-height: 1.2;
   margin-bottom: 20px;
 }
 
-.hero h1 span {
+.hero h1 span,
+.hero h2 span {
   color: #0d60d4;
 }
 
